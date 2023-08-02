@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./bootstrap-5.3.0-dist/css/bootstrap.css">
+    <script defer src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    <script defer src="./bootstrap-5.3.0-dist/js/bootstrap.js"></script>
+    <script src="index.js" defer></script>
+</head>
+<body>
+    <div class="container-fluid display-6">
+        <div class="bg-danger text-center text-white p-3 m-2">Current Operator : <span id="displayoperator">0</span></div>
+        <div class="bg-danger text-center text-white p-3 m-2">Previous Value : <span id="savedisplay">0</span></div>
+        <div class="bg-info text-center text-white p-3 m-2">Current Value : <span id="display">0</span></div>
+        <div class="row text-lg-center justify-content-center">
+            <a class="btn btn-primary m-2 col-10" id="equals" onclick="updateDisplay('equal')">=</a>
+            <a class="btn btn-primary m-2 col-3" id="zero"  onclick="updateDisplay(0)">0</a>
+            <a class="btn btn-primary m-2 col-3" id="one"  onclick="updateDisplay(1)">1</a>
+            <a class="btn btn-primary m-2 col-3" id="two"  onclick="updateDisplay(2)">2</a>
+            <a class="btn btn-primary m-2 col-3" id="three"  onclick="updateDisplay(3)">3</a>
+            <a class="btn btn-primary m-2 col-3" id="four"  onclick="updateDisplay(4)">4</a>
+            <a class="btn btn-primary m-2 col-3" id="five"  onclick="updateDisplay(5)">5</a>
+            <a class="btn btn-primary m-2 col-3" id="six"  onclick="updateDisplay(6)">6</a>
+            <a class="btn btn-primary m-2 col-3" id="seven"  onclick="updateDisplay(7)">7</a>
+            <a class="btn btn-primary m-2 col-3" id="eight"  onclick="updateDisplay(8)">8</a>
+            <a class="btn btn-primary m-2 col-3" id="nine"  onclick="updateDisplay(9)">9</a>
+            <a class="btn btn-secondary m-2 col-3" id="add" onclick="updateDisplay('add')">+</a>
+            <a class="btn btn-secondary m-2 col-3" id="subtract" onclick="updateDisplay('subtract')">-</a>
+            <a class="btn btn-secondary m-2 col-3" id="multiply"onclick="updateDisplay('multiply')" >*</a>
+            <a class="btn btn-secondary m-2 col-3" id="divide" onclick="updateDisplay('divide')">/</a>
+            <a class="btn btn-secondary m-2 col-3" id="decimal" onclick="updateDisplay('decimal')">.</a>
+            <a class="btn btn-warning m-2 col-10" id="clear" onclick="updateClear()">AC</a>
+            
+        </div>
+    </div>
+</body>
+</html>
